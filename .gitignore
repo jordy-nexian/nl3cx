@@ -3,3 +3,7 @@ dist
 .DS_Store
 .env
 apps/api/data/*.json
+apps/web/src/*.js
+apps/web/src/components/*.js
+apps/web/src/lib/*.js
+*.tsbuildinfo
