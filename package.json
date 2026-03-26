@@ -1,0 +1,17 @@
+{
+  "name": "nl3cx",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @nl3cx/api\" \"npm run dev --workspace @nl3cx/web\"",
+    "build": "npm run build --workspace @nl3cx/api && npm run build --workspace @nl3cx/web",
+    "check": "npm run check --workspace @nl3cx/api && npm run check --workspace @nl3cx/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
